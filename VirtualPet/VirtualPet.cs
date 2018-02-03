@@ -53,5 +53,59 @@ namespace VirtualPet
             this.isDirty = isDirty;
 
         }
+
+        //Methods for Twinkletoe the puppy
+
+        public string Hungry()
+        {
+            if (isHungry == false)
+            {
+                isHungry = true;
+                return "I am hungry ";
+            }
+            else
+            {
+                return "I am full ";
+            }
+        }
+
+        public string Bored()
+        {
+            if (isBored == false)
+            {
+                isBored = true;
+                return "I want to play ";
+            }
+            else
+            {
+                return "My play meter is full";
+            }
+        }
+
+        public string Tired()
+        {
+            if (isTried == false)
+            {
+                isTried = true;
+                return "I want to go to bed ";
+            }
+            else
+            {
+                return "I have so much energy ";
+            }
+        }
+
+        public string Dirty()
+        {
+            if (isDirty == false)
+            {
+                isDirty = true;
+                return "I need a bath please";
+            }
+            else
+            {
+                return "I am sparkly clean";
+            }
+        }
     }
 }
