@@ -43,7 +43,15 @@ namespace VirtualPet
             set { this.isDirty = value; }
         }
 
-        
+        //Constructor for Twinkletoe the puppy
 
+        public VirtualPet(bool isHungry, bool isBored, bool isTired, bool isDirty)
+        {
+            this.isHungry = isHungry;
+            this.isBored = isBored;
+            this.isTried = isTried;
+            this.isDirty = isDirty;
+
+        }
     }
 }
