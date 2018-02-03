@@ -14,6 +14,15 @@ namespace VirtualPet
         private bool isTried;
         private bool isBored;
         private bool isDirty;
+        private bool v1;
+        private object isHungry1;
+        private bool v2;
+        private object isBored1;
+        private bool v3;
+        private object isTired;
+        private bool v4;
+        private object isDirty1;
+        private object isDirty2;
 
 
         //Properties of Twinkletoe the puppy
@@ -52,6 +61,30 @@ namespace VirtualPet
             this.isTried = isTried;
             this.isDirty = isDirty;
 
+        }
+
+        public VirtualPet()
+        {
+        }
+
+        public VirtualPet(bool v1, object isHungry1, bool v2, object isBored1, bool v3, object isTired, bool v4, object isDirty1)
+        {
+            this.v1 = v1;
+            this.isHungry1 = isHungry1;
+            this.v2 = v2;
+            this.isBored1 = isBored1;
+            this.v3 = v3;
+            this.isTired = isTired;
+            this.v4 = v4;
+            this.isDirty1 = isDirty1;
+        }
+
+        public VirtualPet(bool isHungry, bool isBored, object isTired, object isDirty2)
+        {
+            this.isHungry = isHungry;
+            this.isBored = isBored;
+            this.isTired = isTired;
+            this.isDirty2 = isDirty2;
         }
 
         //Methods for Twinkletoe the puppy
